@@ -1,0 +1,36 @@
+/* css rule- contains a selector and at least one declaration. A declaration is made up of a property and a value, separated by a : ends with a ; */
+
+h1 {
+
+}
+
+/*Descendent selector: called a descendent combinator selector. Targets the element that has an id of naviation, and all of the descendents that are li's. Doesn't matter if it's a child or grandchild.  */
+#navigation li {
+
+}
+
+/*Child selector: Child combinator selector- child selector. Only selecting ul's that are children of naviagation.  */
+#navigation > ul {
+
+}
+
+targeting class vs id:
+.navigation > ul {}
+#navigation
+
+
+css resets and css normalize. Reset strips all styling. Normalize targets everything and makes styling consistent accross browsers.
+
+* Selector Types
+   * Descendent combinators: #navigation li
+   * Child combinators: #container > p
+   * Adjacent sibling combinators: #container + li
+     * will select only the specified element that immediately follows the former specified element
+   * General sibling combinators: p ~ img
+    * will apply styles to any img elements following a p element
+   * Attribute combinators: input[type="text"]
+   * Pseudo-class combinators (specific states elements can exist in): a:visited
+     * https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+   * Pseudo-element combinators (lets you style specific part of the selected element): li::before
+     * https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+     * https://css-tricks.com/pseudo-element-roundup/
